@@ -12,6 +12,7 @@
     <groupId>com.daixu.springCloud</groupId>
     <artifactId>bom</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../bom/pom.xml</relativePath>
   </parent>
 
   <dependencies>
