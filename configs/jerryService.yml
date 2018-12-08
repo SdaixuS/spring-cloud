@@ -2,3 +2,8 @@ server:
   port: 8101
 
 sayYeah: "Yeah, I`m jerry"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
