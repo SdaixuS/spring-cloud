@@ -1,4 +1,4 @@
 server:
   port: 8101
 
-sayHi: "Yeah, I`m jerry"
+sayYeah: "Yeah, I`m jerry"
