@@ -16,3 +16,6 @@ management:
   endpoint:
     shutdown:
       enabled: true
+
+encrypt:
+  key: 1iou371nckjahDUIH7163

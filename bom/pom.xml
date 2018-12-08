@@ -12,6 +12,7 @@
     <module>../zuul-service</module>
     <module>../eureka-service</module>
     <module>../config-server</module>
+    <module>../tom-service</module>
   </modules>
 
   <parent>
