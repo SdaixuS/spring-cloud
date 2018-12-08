@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: eureka-admin-server
-
 server:
   port: 8080
 

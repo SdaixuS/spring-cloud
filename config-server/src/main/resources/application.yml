@@ -7,3 +7,12 @@ spring:
         git:
           uri: https://github.com/SdaixuS/spring-cloud
           searchPaths: configs
+logging:
+  file: config-server/logs/configServer.log
+  level:
+    root: INFO
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
