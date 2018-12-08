@@ -1,4 +1,4 @@
-package com.daixu.springCloud.tom;
+package com.daixu.springCloud.jerry;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -12,17 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
 @RefreshScope
-public class TomService {
+public class JerryService {
 
-  @Value("${sayhi}")
-  public String sayHi;
+  @Value("${sayYeah}")
+  public String sayYeah;
 
   public static void main(String[] args) {
-    SpringApplication.run(TomService.class, args);
+    SpringApplication.run(JerryService.class, args);
   }
 
-  @GetMapping(value = "/hi", produces = "application/json")
-  public String sayHi() {
-    return sayHi;
+  @GetMapping(value = "yeah", produces = "application/json")
+  public String sayYeah() {
+    return sayYeah;
   }
 }

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: jerryService
+  cloud:
+    config:
+      url: http://localhost:8888
