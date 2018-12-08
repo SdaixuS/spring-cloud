@@ -1,1 +1,4 @@
+server:
+  port: 8100
+
 sayHi: "hi, I`m tom"
