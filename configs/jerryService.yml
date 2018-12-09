@@ -21,7 +21,7 @@ management:
 
 circuitBreaker:
   requestVolumeThreshold: 2
-  errorThresholdPercentage: 50%
+  errorThresholdPercentage: 50
 metrics:
   rollingStats:
-    timeInMilliseconds: 10s
+    timeInMilliseconds: 5000

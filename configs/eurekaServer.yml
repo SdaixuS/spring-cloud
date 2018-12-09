@@ -2,7 +2,7 @@ eureka:
   server:
 #    enable-self-preservation: false
 #    renewal-percent-threshold: 0
-    evictionIntervalTimerInMs : 20000
+    evictionIntervalTimerInMs : 30000
     wait-time-in-ms-when-sync-empt: 60*1000
   instance:
     lease-renewal-interval-in-seconds: 10

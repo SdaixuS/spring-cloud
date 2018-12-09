@@ -27,12 +27,18 @@ public class JerryService {
   }
 
   @GetMapping(value = "yeah", produces = "application/json")
-  @HystrixCommand(fallbackMethod = "outOfOffice")
+  @HystrixCommand(groupKey = "jerry",fallbackMethod = "jerryIsBusy")
   public String sayYeah() {
     return sayYeah;
   }
 
-  public String outOfOffice() {
-    return "seems Jerry is busy with something else ";
+  public String jerryIsBusy() {
+    return "Jerry is busy ";
+  }
+
+  @GetMapping(value = "eatShit", produces = "application/json")
+  @HystrixCommand(groupKey = "jerry",fallbackMethod = "jerryIsBusy")
+  public String eatShit() {
+    throw new RuntimeException("will never do that");
   }
 }

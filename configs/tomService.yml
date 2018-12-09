@@ -18,3 +18,10 @@ management:
     web:
       exposure:
         include: hystrix.stream,info,health
+
+circuitBreaker:
+  requestVolumeThreshold: 2
+  errorThresholdPercentage: 50
+metrics:
+  rollingStats:
+    timeInMilliseconds: 5000
