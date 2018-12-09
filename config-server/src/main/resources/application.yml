@@ -1,12 +1,20 @@
 server:
   port: 8888
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/SdaixuS/spring-cloud
+#          searchPaths: configs
 spring:
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/SdaixuS/spring-cloud
-          searchPaths: configs
+        native:
+          searchLocations: /Users/DW-Home/Develop/projects/java/spring-cloud/configs
 logging:
   file: config-server/logs/configServer.log
   level:
