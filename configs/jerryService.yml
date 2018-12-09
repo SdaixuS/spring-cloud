@@ -1,17 +1,27 @@
 server:
   port: 8101
 
-sayYeah: "Yeah, I`m jerry"
+sayYeah: "Yeah, I`m jerry dfd"
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
     healthcheck:
       enabled: true
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
 
 management:
   endpoints:
     web:
       exposure:
         include: hystrix.stream,info,health
+
+circuitBreaker:
+  requestVolumeThreshold: 2
+  errorThresholdPercentage: 50%
+metrics:
+  rollingStats:
+    timeInMilliseconds: 10s
