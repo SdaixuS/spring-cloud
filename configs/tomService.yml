@@ -1,8 +1,3 @@
-server:
-  port: 8100
-
-sayHi: "hi, I`m tom"
-
 eureka:
   client:
     serviceUrl:
@@ -25,3 +20,21 @@ circuitBreaker:
 metrics:
   rollingStats:
     timeInMilliseconds: 5000
+
+---
+spring:
+  profiles: a
+
+server:
+  port: 8100
+
+sayHi: "hi, I`m tom a"
+
+---
+spring:
+  profiles: b
+
+server:
+  port: 8101
+
+sayHi: "hi, I`m tom b"
