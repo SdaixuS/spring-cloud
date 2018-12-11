@@ -14,3 +14,4 @@ To be added
 - Spring Cloud Bus
 - Spring Cloud Stream
 - AWS
+- Consul
